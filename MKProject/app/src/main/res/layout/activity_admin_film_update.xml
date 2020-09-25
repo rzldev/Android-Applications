@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.CreateAccountActivity">
+
+        <TextView
+            android:id="@+id/update_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Judul"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/update_judulET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint=" "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/update_judul"
+            app:layout_constraintStart_toStartOf="@+id/update_judul"
+            app:layout_constraintTop_toBottomOf="@+id/update_judul" />
+
+        <TextView
+            android:id="@+id/update_sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Sinopsis"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_judulET" />
+
+        <EditText
+            android:id="@+id/update_sinopsisET"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint=" "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/update_sinopsis"
+            app:layout_constraintStart_toStartOf="@+id/update_sinopsis"
+            app:layout_constraintTop_toBottomOf="@+id/update_sinopsis" />
+
+        <TextView
+            android:id="@+id/update_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Harga"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_sinopsisET" />
+
+        <EditText
+            android:id="@+id/update_hargaET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint=" "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/update_harga"
+            app:layout_constraintStart_toStartOf="@+id/update_harga"
+            app:layout_constraintTop_toBottomOf="@+id/update_harga" />
+
+        <TextView
+            android:id="@+id/update_durasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Harga"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update_hargaET" />
+
+        <EditText
+            android:id="@+id/update_durasiET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint=" "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/update_durasi"
+            app:layout_constraintStart_toStartOf="@+id/update_durasi"
+            app:layout_constraintTop_toBottomOf="@+id/update_durasi" />
+
+        <Button
+            android:id="@+id/update_film_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="64dp"
+            android:text="Tambahk Film"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/update_durasiET"
+            app:layout_constraintStart_toStartOf="@id/update_durasiET"
+            app:layout_constraintTop_toBottomOf="@id/update_durasiET" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

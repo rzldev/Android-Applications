@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">B-Gor Lapangan</string>
+    <string-array name="namaBank">
+        <item>BCA</item>
+        <item>Mandiri</item>
+        <item>BNI</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

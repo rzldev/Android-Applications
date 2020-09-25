@@ -1,0 +1,2 @@
+include ':app', ':myandroidlibrary'
+rootProject.name='WebView Application'

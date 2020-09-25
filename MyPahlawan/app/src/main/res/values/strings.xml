@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Pahlawan</string>
+
+    <string-array name="pahlawanName">
+        <item>Ahmad Dahlan</item>
+        <item>Ahmad Yani</item>
+        <item>Bung Tomo</item>
+        <item>Gatot Subroto</item>
+        <item>Ki Hadjar Dewantara</item>
+        <item>Mohammad Hatta</item>
+        <item>Sudirman</item>
+        <item>Sukarno</item>
+        <item>Supomo</item>
+    </string-array>
+
+    <string-array name="pahlawanDescription">
+        <item>Kiai Haji Ahmad Dahlan atau Muhammad Darwis (lahir di Yogyakarta, 1 Agustus 1868 – meninggal di Yogyakarta, 23 Februari 1923 pada umur 54 tahun)</item>
+        <item>Jenderal TNI Anumerta Ahmad Yani (juga dieja Achmad Yani; lahir di Purworejo, Jawa Tengah, 19 Juni 1922 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 43 tahun)</item>
+        <item>Sutomo (lahir di Surabaya, Jawa Timur, 3 Oktober 1920 – meninggal di Padang Arafah, Arab Saudi, 7 Oktober 1981 pada umur 61 tahun)</item>
+        <item>Jenderal TNI (Purn.) Gatot Soebroto (lahir di Sumpiuh, Banyumas, Jawa Tengah, 10 Oktober 1907 – meninggal di Jakarta, 11 Juni 1962 pada umur 54 tahun)</item>
+        <item>Raden Mas Soewardi Soerjaningrat (EBI: Suwardi Suryaningrat, sejak 1922 menjadi Ki Hadjar Dewantara, EBI: Ki Hajar Dewantara, beberapa menuliskan bunyi bahasa Jawanya dengan Ki Hajar Dewantoro; lahir di Pakualaman, 2 Mei 1889 – meninggal di Yogyakarta, 26 April 1959 pada umur 69 tahun; selanjutnya disingkat sebagai "Soewardi" atau "KHD")</item>
+        <item>DR. Drs. H. Mohammad Hatta (populer sebagai Bung Hatta; lahir dengan nama Mohammad Athar di Fort de Kock, Hindia Belanda, 12 Agustus 1902 – meninggal di Jakarta, 14 Maret 1980 pada umur 77 tahun)</item>
+        <item>Jenderal Besar Raden Soedirman (EYD: Sudirman; lahir 24 Januari 1916 – meninggal 29 Januari 1950 pada umur 34 tahun)</item>
+        <item>Dr.(H.C.) Ir. H. Soekarno (ER, EYD: Sukarno, nama lahir: Koesno Sosrodihardjo) (lahir di Surabaya, Jawa Timur, 6 Juni 1901 – meninggal di Jakarta, 21 Juni 1970 pada umur 69 tahun)</item>
+        <item>Marsekal Muda TNI (Purn.) Supomo, S.I.P., M.Sc. (lahir di Kota Raha, Sulawesi Tenggara, 7 Februari 1959; umur 60 tahun)</item>
+    </string-array>
+
+    <string-array name="pahlawanImage">
+        <item>@drawable/ahmad_dahlan</item>
+        <item>@drawable/ahmad_yani</item>
+        <item>@drawable/bung_tomo</item>
+        <item>@drawable/gatot_subroto</item>
+        <item>@drawable/ki_hadjar_dewantara</item>
+        <item>@drawable/mohammad_hatta</item>
+        <item>@drawable/sudirman</item>
+        <item>@drawable/sukarno</item>
+        <item>@drawable/supomo</item>
+    </string-array>
+
+</resources>

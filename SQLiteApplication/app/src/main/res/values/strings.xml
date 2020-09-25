@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SQLite Application</string>
+    <string name="username">User Name:</string>
+    <string name="password">Password:</string>
+    <string name="view_data">View Data</string>
+    <string name="add_user">Tambah User</string>
+    <string name="update">Update User</string>
+    <string name="delete">Hapus</string>
+</resources>

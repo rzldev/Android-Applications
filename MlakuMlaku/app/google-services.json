@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860708094472",
+    "firebase_url": "https://mlaku-mlaku-53d35.firebaseio.com",
+    "project_id": "mlaku-mlaku-53d35",
+    "storage_bucket": "mlaku-mlaku-53d35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860708094472:android:35c9d9093e52f585fe87bd",
+        "android_client_info": {
+          "package_name": "com.example.mlakumlaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860708094472-8h6j5vrackivnhgrj478u06k6d4fgsp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-WpFV-agOi1AcKiR_AMou8aixUer51Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860708094472-8h6j5vrackivnhgrj478u06k6d4fgsp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

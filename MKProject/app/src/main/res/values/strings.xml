@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MKProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="jadwal_array">
+        <item>Pilih Jadwal</item>
+        <item>12:15:00</item>
+        <item>12:45:00</item>
+        <item>15:10:00</item>
+        <item>15:40:00</item>
+        <item>18:05:00</item>
+        <item>18:35:00</item>
+        <item>21:00:00</item>
+        <item>21:30:00</item>
+    </string-array>
+</resources>

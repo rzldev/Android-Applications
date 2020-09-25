@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pre Test</string>
+
+    <string-array name="prodi">
+        <item>S1 Sistem Informasi</item>
+        <item>S1 Sistem Komputer</item>
+        <item>S1 DKV</item>
+    </string-array>
+</resources>

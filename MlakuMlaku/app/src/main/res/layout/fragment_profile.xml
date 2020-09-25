@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment"
+    android:background="@color/lightGray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profileBg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/selkirkrex"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:src="@drawable/selkirkrex1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/profileBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileBg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileName"
+            android:text="ThomasX"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/profileImg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileEmail"
+            android:text="ThomasXavier@gmail.com"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/profileName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout3"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg_profile"
+            app:layout_constraintTop_toBottomOf="@id/profileEmail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/dateIcon"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/ic_date_range"
+                app:layout_constraintTop_toTopOf="@id/date"
+                app:layout_constraintBottom_toBottomOf="@id/date"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="Berulang tahun pada 12 Januari 2020"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dateIcon"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/addressIcon"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/ic_home"
+                app:layout_constraintTop_toTopOf="@id/address"
+                app:layout_constraintBottom_toBottomOf="@id/address"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:text="Tinggal di Buduran"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/dateIcon"
+                app:layout_constraintStart_toEndOf="@id/dateIcon"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/walkIcon"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/ic_walk"
+                app:layout_constraintTop_toTopOf="@id/walk"
+                app:layout_constraintBottom_toBottomOf="@id/walk"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/walk"
+                android:text="Telah mengikuti 0 events"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/addressIcon"
+                app:layout_constraintStart_toEndOf="@id/walkIcon"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:id="@+id/lineSocialMedia"
+                app:layout_constraintTop_toTopOf="@id/textSocialMedia"
+                app:layout_constraintBottom_toBottomOf="@id/textSocialMedia"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textSocialMedia"
+                android:text="Social Media"
+                android:padding="8dp"
+                android:background="@color/lightGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/walkIcon"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/facebookIcon"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/facebook"
+                app:layout_constraintTop_toTopOf="@id/facebookLink"
+                app:layout_constraintBottom_toBottomOf="@id/facebookLink"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebookLink"
+                android:text="https://www.facebook.com/Thomas.Xavier"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintTop_toBottomOf="@id/textSocialMedia"
+                app:layout_constraintStart_toEndOf="@id/facebookIcon"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/instagramIcon"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/instagram"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/facebookIcon"
+                app:layout_constraintBottom_toBottomOf="@id/instagramLink"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instagramLink"
+                android:text="https://www.instagram.com/ThomasX"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/facebookLink"
+                app:layout_constraintStart_toEndOf="@id/instagramIcon"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLogOut"
+                android:text="LOGOUT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

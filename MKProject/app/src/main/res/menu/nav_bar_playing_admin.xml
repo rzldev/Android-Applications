@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/playing_nav_admin"
+        android:title="PLAYING"/>
+
+    <item
+        android:id="@+id/most_viewed_nav_admin"
+        android:title="MOST VIEWED"/>
+
+</menu>

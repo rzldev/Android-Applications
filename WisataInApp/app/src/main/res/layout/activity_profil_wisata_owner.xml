@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".Activities.Main.ProfilWisataOwnerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="Profil Wisata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pwotNamaOwner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Nama Owner"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/pwoiGambarOwner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pwotOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="owner"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotNamaOwner" />
+
+            <ImageView
+                android:id="@+id/pwoiGambarOwner"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/pwotOwner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pwotNamaOwner" />
+
+            <ImageView
+                android:id="@+id/garisAtas"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="0dp"
+                android:background="#f5f5f5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotOwner" />
+
+            <Button
+                android:id="@+id/pwoBtnKonfirmasiTiket"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bgbelitiket"
+                android:text="Konfirmasi Tiket"
+                android:textColor="@color/colorPutih"
+                app:layout_constraintBottom_toTopOf="@id/garisHarga"
+                app:layout_constraintEnd_toStartOf="@id/pwoBtnScan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/garisAtas" />
+
+            <Button
+                android:id="@+id/pwoBtnScan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bgmasuk"
+                android:text="SCAN"
+                android:textColor="@color/colorPutih"
+                app:layout_constraintBottom_toTopOf="@id/garisHarga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/pwoBtnKonfirmasiTiket"
+                app:layout_constraintTop_toBottomOf="@id/garisAtas" />
+
+            <ImageView
+                android:id="@+id/garisHarga"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#f5f5f5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwoBtnScan" />
+
+            <TextView
+                android:id="@+id/pwotNamaWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Nama Wisata"
+                android:textColor="@color/colorGelap"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwoiGambarWisata" />
+
+            <ImageView
+                android:id="@+id/pwoiGambarWisata"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/ic_add_a_photo_black_128dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/garisHarga" />
+
+            <TextView
+                android:id="@+id/pwotNamadanKotaWisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Lokasi Wisata"
+                android:textColor="@color/colorButton"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotNamaWisata" />
+
+            <TextView
+                android:id="@+id/pwotDeskripsiWisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="blablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla"
+                android:textColor="#99000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotNamadanKotaWisata" />
+
+            <TextView
+                android:id="@+id/pwotJamOperasional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Jam Operasional"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotDeskripsiWisata" />
+
+
+            <TextView
+                android:id="@+id/pwotJamOperasionalKeterangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="06.00 - 18.00 WIB"
+                android:textColor="@color/colorButton"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@id/logojam"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotJamOperasional" />
+
+            <ImageView
+                android:id="@+id/logojam"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_access_time_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/pwotJamOperasionalKeterangan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pwotJamOperasional" />
+
+            <TextView
+                android:id="@+id/tvGarisJam"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#44000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotJamOperasionalKeterangan" />
+
+            <TextView
+                android:id="@+id/pwotHargaTiket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Harga Tiket"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvGarisJam" />
+
+            <TextView
+                android:id="@+id/pwotHargaTiketKeterangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="GRATIS"
+                android:textColor="@color/colorButton"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/logoHarga"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotHargaTiket" />
+
+            <ImageView
+                android:id="@+id/logoHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ic_attach_money_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/pwotHargaTiketKeterangan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pwotHargaTiket" />
+
+            <TextView
+                android:id="@+id/tvGarisHarga"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#44000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotHargaTiketKeterangan" />
+
+            <TextView
+                android:id="@+id/pwotCocokUntuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Cocok Untuk"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintTop_toBottomOf="@id/tvGarisHarga" />
+
+            <TextView
+                android:id="@+id/pwotCocokUntukKeterangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Wisatawan OreoShake yang kelaparan dan ingin makan enak"
+                android:textColor="@color/colorButton"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/imgCentang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotCocokUntuk" />
+
+            <ImageView
+                android:id="@+id/imgCentang"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/ic_check_circle"
+                app:layout_constraintBottom_toBottomOf="@id/pwotCocokUntukKeterangan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pwotCocokUntuk" />
+
+            <TextView
+                android:id="@+id/tvGarisCocok"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#44000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotCocokUntukKeterangan" />
+
+            <TextView
+                android:id="@+id/pwotDetailLokasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Detail Lokasi"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvGarisCocok" />
+
+            <TextView
+                android:id="@+id/pwotDetailLokasiKeterangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Institut Bisnis danInformatika STIKOM Surabaya, Surabaya"
+                android:textColor="@color/colorButton"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/imgLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pwotDetailLokasi" />
+
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/ic_location_on_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/pwotDetailLokasiKeterangan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pwotDetailLokasi" />
+
+
+            <ImageView
+                android:id="@+id/bgBeliTiket"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="72dp"
+                app:layout_constraintTop_toBottomOf="@id/pwotDetailLokasiKeterangan" />
+
+            <Button
+                android:id="@+id/pwoBtnEditWisata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bgbelitiket"
+                android:text="Edit Wisata"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="@id/bgBeliTiket"
+                app:layout_constraintEnd_toEndOf="@id/bgBeliTiket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bgBeliTiket" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

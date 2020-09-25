@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/time_menu"
+        android:title="Time"
+        android:icon="@drawable/ic_time_grey_100dp"/>
+
+    <item
+        android:id="@+id/timer_menu"
+        android:title="Timer"
+        android:icon="@drawable/ic_timer_grey_100dp"/>
+
+    <item
+        android:id="@+id/stopwatch_menu"
+        android:title="Stopwatch"
+        android:icon="@drawable/ic_stopwatch_grey_100dp"/>
+
+</menu>

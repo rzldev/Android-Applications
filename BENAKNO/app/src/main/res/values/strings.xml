@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BENAKNO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="merkAC">
+        <item>Merk AC</item>
+        <item>Samsung</item>
+        <item>Daikin</item>
+        <item>Sharp</item>
+        <item>Panasonic</item>
+        <item>LG</item>
+        <item>Changhong</item>
+    </string-array>
+</resources>
